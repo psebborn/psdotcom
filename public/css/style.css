@@ -1,0 +1,139 @@
+/* Generic */
+html,
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #444;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+strong {
+  color: #181619;
+}
+
+a {
+  /*color: #028F76;*/
+  color: #FF003D;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 50rem;
+}
+
+/* Header*/
+.page-header {
+  background: url('/images/header2.jpg') 50% 30% no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 25vh;
+  min-height: 20rem;
+  padding: 4rem 0 0.6rem;
+}
+
+.page-header__title {
+  font-size: 5rem;
+  color: #fff;
+  flex: 2;
+  margin: 0;
+  text-shadow: 0 1px 3px rgba(80, 80, 80, 0.7);
+  text-transform: uppercase;
+}
+
+.page-header__strapline {
+  align-self: bottom;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(50, 50, 50, 0.7);
+  text-transform: uppercase;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+/* Footer */
+.page-footer {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+
+
+/* Contact links */
+.contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0 1rem;
+  padding: 0;
+}
+
+
+
+.contact a {
+  background-color: #ff003d;
+  background-position: 50% 50%;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: block;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 2.8rem;
+  height: 2.8rem;
+  margin: 0 0.5rem;
+  padding: 0;
+  transition: background-color 0.1s ease-in;
+}
+
+.contact a:hover,
+.contact a:focus {
+  background-color: #181619;
+}
+
+.contact--twitter a {
+  background-image: url('/images/twitter.svg');
+}
+
+.contact--github a {
+  background-image: url('/images/github.svg');
+}
+
+.contact--linkedin a {
+  background-image: url('/images/linkedin.svg');
+}
+
+/* Blogs */
+
+.blog {}
+.blog__title {
+  margin-bottom: 0.5rem;
+}
+
+x.blog {}
+.blog {}
