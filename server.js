@@ -1,5 +1,6 @@
 var express = require('express'),
     exphbs = require('express-handlebars'),
+    bodyParser = require('body-parser'),
     // mongoose = require('mongoose'),
     http = require('http'),
     request = require('request'),
@@ -16,9 +17,13 @@ var app = express(),
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
+app.use(bodyParser.json());
 
 // Index route
 app.get('/', routes.index);
+
+// Individual blog post
+app.get('/:slug', routes.blogpost);
 
 // Set /public as static content dir
 app.use('/', express.static(__dirname + '/public'));

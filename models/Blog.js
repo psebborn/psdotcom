@@ -8,7 +8,7 @@ var mongoose = require('mongoose'),
 
 
 
-// Create a static getBlogs method, which returns tweet data from db
+// Create a static getBlogs method, which returns blog data from db
 schema.statics.getBlogs = function(page, skip, callback) {
   var blogs = [],
       start = (page * 10) + (skip * 1);

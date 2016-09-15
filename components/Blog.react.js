@@ -8,10 +8,17 @@ module.exports = Blog = React.createClass({
   },
   render: function() {
     var blog = this.props.blog,
-        rawBody = this.renderRawMarkup(blog.body)
+        rawBody = this.renderRawMarkup(blog.body);
+
     return (
       <article className="blog-post">
-        <h2 className="blog-post__title">{blog.title}</h2>
+       <h2 className="blog-post__title">
+       {
+        blog.path
+        ? <a href={blog.path}>{blog.title}</a>
+        : blog.title
+       }
+       </h2>
         <div className="blog-post__meta">
           <h3 className="blog-post__author">{blog.author}</h3>
           <h3 className="blog-post__date">{blog.created}</h3>

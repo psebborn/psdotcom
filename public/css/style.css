@@ -64,6 +64,11 @@ p {
   text-transform: uppercase;
 }
 
+.page-header__title a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .page-header__strapline {
   align-self: bottom;
   color: #fff;
